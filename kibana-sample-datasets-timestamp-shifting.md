@@ -1,5 +1,6 @@
 # Initial Prompt
-21/04/2026 14:00
+**Creation Date:** 21/04/2026 14:00  
+**Updated:** 2026-04-21 15:20
 
 > In Kibana installation, we can install sample datasets for web logs traffic. At the time of installation, the dataset is adapted to change the timestamp dates backward 10 or 12 days in the past and around 1 month in the future. I would like to know how this is done. So far I am assuming it is done with a similar approach as in the attached script: using the _update_by_query endpoint with an ingest pipeline with a painless script. However this is going to be time consuming if we want to have a significant amount documents. I am curious to know if they use a smarter approacher in the Kibana sample datasets installation.
 
@@ -113,3 +114,23 @@ To optimize your approach, consider:
 4. **Batch processing** - process documents in chunks to manage memory
 
 This is how production-grade Kibana handles sample data installation efficiently at scale.
+
+---
+**Updated:** 2026-04-21 12:49:16
+
+## Dataset Configurations
+
+### Flights Dataset
+- **Size:** 10MB
+- **Download Link**: [Flights Dataset flights.json.gz](https://github.com/elastic/kibana/blob/main/src/platform/plugins/shared/home/server/services/sample_data/data_sets/flights/flights.json.gz)
+
+### Logs Dataset
+- **Size:** 20MB
+- **Download Link**: [Logs Dataset logs.json.gz](https://github.com/elastic/kibana/blob/main/src/platform/plugins/shared/home/server/services/sample_data/data_sets/logs/logs.json.gz)
+
+
+### eCommerce Dataset
+- **Size:** 15MB
+- **Download Link**: [eCommerce Dataset ecommerce.json.gz](https://github.com/elastic/kibana/blob/main/src/platform/plugins/shared/home/server/services/sample_data/data_sets/ecommerce/ecommerce.json.gz)
+
+
